@@ -3,7 +3,7 @@
  * 2. 해당 출력을 정답으로 만드세요. (미리 만들어진 코드는 수정 불가!)
  */
 
-public class Problem2 {
+public class Problem {
 
     private static final String[] TEST_CASES = {
             "ars nova",
