@@ -55,6 +55,9 @@ public class Problem {
         t = s;
         s.append("!");
 
+        t = new StringBuilder(s);
+        t.append("T");
+
         if (!t.toString().equals(s.toString())) {
             System.out.println("정답");
         } else {
