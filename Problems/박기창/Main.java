@@ -59,6 +59,11 @@ public class Main {
     public static String solution(String my, String overwrite, int s) {
         String answer="";
 
+        answer=answer+my.substring(0,s);
+        answer=answer+overwrite;
+        if(answer.length() != my.length()){
+            answer=answer+my.substring(answer.length());
+        }
 
         return answer;
     }
