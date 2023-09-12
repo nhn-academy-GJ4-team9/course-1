@@ -54,7 +54,7 @@ objects의 도메인 표현
 5. 가상 머신 기반
 5. 안전합니다(가상 머신은 인터넷을 통해 실행되는 애플리케이션에 대한 원치 않는 액세스를 금지합니다).
 
-
+'''
 import java.lang.*; // 미리 정의된 클래스/프로그램의 라이브러리를 사용하도록 요청
 public class First {  //First라는 클래스 정의
     public static void main(String[] args) {  // 기본 메소드 정의
@@ -64,7 +64,7 @@ public class First {  //First라는 클래스 정의
                                                               // "This is my first Java program." 은 표시할 문장을 나타내는 String 클래스의 객체
     }
 }
-
+'''
 
 자바 컴파일러는 컴퓨터에서 직접 실행할 수 있는 코드 생성 X
 대신 자바 바이트코드라는 코드를 생성
