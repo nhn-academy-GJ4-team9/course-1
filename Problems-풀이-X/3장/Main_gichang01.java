@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Main_gichang {
+public class Main_gichang01 {
 
     private static final String[] TEST_CASES = {
         "rermgorpsam"
