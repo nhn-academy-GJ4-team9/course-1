@@ -1,0 +1,6 @@
+
+r	java:S117	"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‚·ùùøÿÿÿÿ8±Â´ê¨1
+v	java:S116"[Rename this field "complete_message" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(†ç®]8´Â´ê¨1
+i	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(„åý	8¶Â´ê¨1
+P
+java:S1128".Remove this unused import 'java.util.Scanner'.(ÒÜÅ¸úÿÿÿÿ8ˆ´·ê¨1
