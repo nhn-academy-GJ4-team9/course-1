@@ -10,7 +10,7 @@ nhn 아카데미 광주 4기, 9팀 https://www.inf.unibz.it/~calvanese/teaching/
 == 팀 구성원 (이름 순)
 
 1. https://github.com/nhn-academy-GJ4-team9/course-1/tree/%EA%B0%95%EB%AF%BC%EC%B0%AC[강민찬]
-2. [김혁진]
+2. https://github.com/nhn-academy-GJ4-team9/course-1/tree/%EA%B9%80%ED%98%81%EC%A7%84[김혁진]
 3. https://github.com/nhn-academy-GJ4-team9/course-1/tree/%EA%B9%80%ED%98%84%EC%A4%91[김현중]
 4. https://github.com/nhn-academy-GJ4-team9/course-1/tree/%EB%B0%95%EA%B8%B0%EC%B0%BD[박기창]
 5. https://github.com/nhn-academy-GJ4-team9/course-1/tree/%EC%86%90%EB%B9%88[손 빈]
