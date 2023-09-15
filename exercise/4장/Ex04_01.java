@@ -27,5 +27,6 @@ public class Ex04_01 {
      */
     public static void main(String[] args) {
         System.out.println(convertLireEuro(1000));
+        System.out.println();
     }
 }
