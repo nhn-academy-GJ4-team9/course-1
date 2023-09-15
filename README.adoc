@@ -2,50 +2,7 @@
 
 nhn 아카데미 광주 4기, 9팀 https://www.inf.unibz.it/~calvanese/teaching/04-05-ip/lecture-notes/[선택과정 1: Introduction to Java]
 
-== 교육 내용
- - 교재의 각 장을 스스로 공부하여, 문재를 만들고 각자 문제를 해결
- - 문제 제작자의 코드를 팀원들과 TA가 함께 코드리뷰를 실시
+== 소개
+ - 교재의 각 장을 스스로 공부하여, 문재를 만들고 각자 문제를 해결하고 해당 풀이를 올리는 곳
 
-== 교육 과정
 
-[%header,cols=2*]
-|===
-|일자
-|내용
-
-|2023.09.12
-| https://github.com/nhn-academy-GJ4-team9/course-1/tree/Ch01-02[Introduce to Java Ch1, Ch2]
-
-|2023.09.13
-| https://github.com/nhn-academy-GJ4-team9/course-1/tree/Ch03[Introduce to Java Ch3 1/2]
-
-|2023.09.14
-| https://github.com/nhn-academy-GJ4-team9/course-1/tree/Ch03[Introduce to Java Ch3 2/2]
-
-|2023.09.15
-| https://github.com/nhn-academy-GJ4-team9/course-1[Introduce to Java Ch4]
-
-|2023.09.18
-| https://github.com/nhn-academy-GJ4-team9/course-1[Introduce to Java Ch5]
-
-|2023.09.19
-|https://github.com/nhn-academy-GJ4-team9/course-1[Introduce to Java Ch6]
-
-|2023.09.20
-| https://github.com/nhn-academy-GJ4-team9/course-1[Introduce to Java Ch7]
-
-|2023.09.21
-| https://github.com/nhn-academy-GJ4-team9/course-1[Introduce to Java Ch8]
-
-|2023.09.22
-| https://github.com/nhn-academy-GJ4-team9/course-1[Introduce to Java Ch9]
-
-|2023.09.25
-| https://github.com/nhn-academy-GJ4-team9/course-1[Introduce to Java Ch10]
-
-|2023.09.26
-| https://github.com/nhn-academy-GJ4-team9/course-1[Introduce to Java Ch11]
-
-|2023.09.27
-| https://github.com/nhn-academy-GJ4-team9/course-1[시험?]
-|===
