@@ -1,4 +1,4 @@
-package org.example;
+package com.introduction.unit3;
 
 /*
     아래 코드의 변수 a의 메모리에서 변화와 출력결과를 확인하고 b와 같은 출력을 만들어주세요.
