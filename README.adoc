@@ -36,8 +36,5 @@ nhn 아카데미 광주 4기, 9팀 https://www.inf.unibz.it/~calvanese/teaching/
 |2023.09.15
 |https://github.com/nhn-academy-GJ4-team9/course-1/blob/summary/UNIT04/4%EC%9E%A5%EC%9A%94%EC%95%BD.md[Introduction to Programming Java Ch4]
 
-|2023.09.18
-|https://github.com/nhn-academy-GJ4-team9/course-1/blob/summary/UNIT05/5%E1%84%8C%E1%85%A1%E1%86%BC%20%E1%84%8B%E1%85%AD%E1%84%8B%E1%85%A3%E1%86%A8.md[Introduction to Programming Java Ch5]
-
 
 |===
