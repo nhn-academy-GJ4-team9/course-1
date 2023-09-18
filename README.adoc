@@ -3,6 +3,6 @@
 nhn 아카데미 광주 4기, 9팀 https://www.inf.unibz.it/~calvanese/teaching/04-05-ip/lecture-notes/[선택과정 1: Introduction to Java]
 
 == 소개
- - 교재의 각 장을 스스로 공부하여, 문재를 만들고 각자 문제를 해결하고 해당 풀이를 올리는 곳
+ - 교재의 각 장을 스스로 공부하여, 문제를 만들고 각자 문제를 해결하고 해당 풀이를 올리는 곳
 
 
