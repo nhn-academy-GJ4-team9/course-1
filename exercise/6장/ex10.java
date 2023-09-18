@@ -10,13 +10,10 @@ public class ex10 {
         }
 
 
-        if (n == 0) {
+        if (n == 0 || n==1) {
             return 1;
         }
-
-        if (n == 1) {
-            return 1;
-        } else {
+        else {
             return factorial(n - 1) * n;
         }
     }
@@ -35,5 +32,6 @@ public class ex10 {
             System.out.println(factorial(i));
 
         }
+        scanner.close();
     }
 }

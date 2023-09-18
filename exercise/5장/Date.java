@@ -7,12 +7,29 @@ public class Date {
     int month;
     int year;
 
-    public Date(int day, int month, int year) {
-        this.day = day;
-        this.month = month;
-        this.year = year;
+    public Date(int year, int month, int day) {
+        if (isValidDate(day, month, year)) {
+            this.day = day;
+            this.month = month;
+            this.year = year;
+        } else {
+            throw new IllegalArgumentException("에러");
+        }
     }
 
+    private static boolean isValidDate(int day, int month, int year) {
+        if (month < 1 || month > 12) {
+            return false;
+        }
+        if (day < 1 || day > 31) {
+            return false;
+        }
+        int[] daysInMonth = {0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+        if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) {
+            daysInMonth[2] = 29;
+        }
+        return day <= daysInMonth[month];
+    }
 
     public int getDay() {
         return day;
@@ -26,7 +43,7 @@ public class Date {
         return year;
     }
 
-    public String yunyear() {
+    public String isLeapYear() {
 
         if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0) {
             return "윤년";
@@ -113,7 +130,7 @@ public class Date {
         System.out.println("date1과 date2는 같은 날짜입니까? " + date1.equals(date2));
         System.out.println("date1이 date2보다 이전입니까? " + date1.directory(date2));
 
-        System.out.println("date1의 년도는 윤년입니까? " + date1.yunyear());
+        System.out.println("date1의 년도는 윤년입니까? " + date1.isLeapYear());
 
         date1.nextDay();
         System.out.println("date1의 다음 날짜는 " + date1.getDay() + "/" + date1.getMonth() + "/" + date1.getYear());
