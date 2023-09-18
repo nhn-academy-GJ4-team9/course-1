@@ -10,8 +10,8 @@ public class SumInRangeTest {
         int[] arr3 = {1, 2, 3, 4, 5};
 
         assertEquals(4, SumInRange.sumInRange(arr1, 1, 4));
-        assertEquals(9, SumInRange.sumInRange(arr2, 1, 4));
+        assertEquals(15, SumInRange.sumInRange(arr2, 1, 4));
         assertEquals(15, SumInRange.sumInRange(arr3, 0, 4));
-        assertEquals(10, SumInRange.sumInRange(arr3, 1, 3));
+        assertEquals(9, SumInRange.sumInRange(arr3, 1, 3));
     }
 }
