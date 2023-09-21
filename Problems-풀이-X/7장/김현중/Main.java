@@ -1,4 +1,5 @@
 // 문제 : 2x2 배열 내의 숫자들중 target 숫자와 일치 하는 값을 가진 position 배열을 출력하시오
+// 출력예시 : Target 2 found at position : [1, 2]
 import java.util.ArrayList;
 import java.util.List;
 
