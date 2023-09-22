@@ -38,16 +38,8 @@ public class Main {
     public static void solution(int number) {
 
         // TODO 여기에 Base Case를 작성하시오.
-        if (number == 0) {
-            System.out.println("Finished [ " + number + " ]");
-            return;
-        }
 
         // TODO 여기에 Recurson Case를 작성하시오.
-        System.out.println("Activated [ " + number + " ]");
-        solution(number - 1);
-        System.out.println("Re-activated [ " + number + " ]");
-        System.out.println("Finished [ " + number + " ]");
 
     }
 
