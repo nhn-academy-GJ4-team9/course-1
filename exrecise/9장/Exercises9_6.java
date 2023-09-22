@@ -12,7 +12,7 @@ class ExceptionLineTooLong extends Exception {
 
 public class Exercises9_6 {
     public static void main(String[] args) {
-        String fileName = "test.txt"; // 파일 이름을 지정하세요.
+        String fileName = "test.txt";
 
         try {
             BufferedReader reader = new BufferedReader(new FileReader(fileName));
