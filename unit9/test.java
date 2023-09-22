@@ -11,7 +11,7 @@ import java.util.List;
 public class test {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new FileReader("test.txt"));
-        String str="";
+        String str = "";
 
 
         List<String> lines = Files.readAllLines(Paths.get("test.txt"));
@@ -21,7 +21,7 @@ public class test {
 
         char[] cbuf = new char[100];
 
-        br.read(cbuf,0,100);
+        br.read(cbuf, 0, 100);
 
         System.out.println(Arrays.toString(cbuf));
 
