@@ -10,13 +10,8 @@ public class RecursivePower {
   * @return 밑과 지수에 대한 거듭제곱 값
   */
  public static double power(double base, int exp){
-  if(exp ==0){
-   return 1;
-  } else if(exp<0){
-   base = 1/base;
-   exp = -exp;
-  }
-  double res = base * power(base,exp-1);
+  
+  double res;
   return res;
  }
 
