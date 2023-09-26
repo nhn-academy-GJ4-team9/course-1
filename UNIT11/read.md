@@ -31,4 +31,5 @@ public class ListNode {
 }
 ```
 
-![image](img/1.png)
+![image](./img/1.png)
+![image](./img/2.png)
