@@ -50,4 +50,7 @@ https://github.com/nhn-academy-GJ4-team9/course-1/blob/summary/UNIT08/8%E1%84%8C
 |2023.09.25
 |https://github.com/nhn-academy-GJ4-team9/course-1/blob/summary/UNIT10/10%EC%9E%A5.md[Introduction to Programming Java Ch10]
 
+|2023.09.26
+|https://github.com/nhn-academy-GJ4-team9/course-1/blob/summary/UNIT10/10%EC%9E%A5.md[Introduction to Programming Java Ch10 보충/보완
+
 |===
