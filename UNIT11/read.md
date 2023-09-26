@@ -30,3 +30,5 @@ public class ListNode {
   public ListNode next;    //다음 노드 주소
 }
 ```
+
+![image](img/1.png)
