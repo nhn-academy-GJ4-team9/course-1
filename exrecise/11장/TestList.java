@@ -50,17 +50,18 @@ import java.lang.annotation.ElementType;
         }
 
         // old 의 모든 항목을 ne 로 변경하여 lis를수정하여 얻은 목록을 반환
-        public static ListNodemodifyAll(ListNode lis, String old, String ne) {
+        public static ListNode modifyAll(ListNode lis, String old, String ne) {
             ListNode current = lis;
-            while (current != null){
-                if (current.info.equals()){
-
+            while (current != null) {
+                if (current.info.equals(old)) {
+                    current.info = ne;
                 }
+                current = current.next;
             }
+            return lis;
         }
 
-
-
+        
 //        public static ListNode create3NodesABC() {
 //            ListNode a = new ListNode();
 //            ListNode b = new ListNode();
