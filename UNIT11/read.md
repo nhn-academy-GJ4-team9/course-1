@@ -39,7 +39,11 @@ public class ListNode {
 
 
     순차적으로 데이터 추가/삭제         ----->ArrayList가 더 빠름
+
+
     중간(비순차적)에 데이터 추가/삭제    ----->LinkedList가 더 빠름
+
+
     접근시간(데이터 읽는 시간)         ----->ArrayList가 더 빠름
 
 
