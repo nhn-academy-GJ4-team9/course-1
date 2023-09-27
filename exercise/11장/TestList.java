@@ -8,7 +8,7 @@ import java.lang.annotation.ElementType;
     public class TestList {
 
         public static void main(String[] args) {
-
+            System.out.println("zzz");
         }
 
         //lis의 길이를 반환
