@@ -60,6 +60,14 @@ import java.lang.annotation.ElementType;
             }
             return lis;
         }
+        public static ListNode copy (ListNode lis) {
+            ListNode current = lis;
+            while (current != null) {
+
+            }
+            return current;
+        }
+    }
 
         
 //        public static ListNode create3NodesABC() {
