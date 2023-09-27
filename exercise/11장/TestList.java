@@ -8,7 +8,32 @@ import java.lang.annotation.ElementType;
     public class TestList {
 
         public static void main(String[] args) {
-            System.out.println("zzz");
+            ListNode current = lis;
+            ListNode a = new ListNode();
+            ListNode b = new ListNode();
+            ListNode c = new ListNode();
+            a.info = "A";
+            a.next = b;
+            b.info = "B";
+            b.next = c;
+            c.info = "C";
+            c.next = null;
+
+            System.out.println(a);
+            System.out.print("length : ");
+            System.out.println(length(a));
+
+            insertAfter(a,"B","F");
+            System.out.println("insertafter");
+            System.out.println( a);
+
+            modify(a,"B","C");
+            System.out.println("modiyfy");
+            System.out.println(a);
+
+            modifyAll(lis)
+            System.out.println("modifyAll");
+            System.out.println(lis);
         }
 
         //lis의 길이를 반환
@@ -61,16 +86,7 @@ import java.lang.annotation.ElementType;
             return lis;
         }
         public static ListNode copy (ListNode lis) {
-            ListNode current = lis;
-            ListNode a = new ListNode();
-            ListNode b = new ListNode();
-            ListNode c = new ListNode();
-            a.info = "A";
-            a.next = b;
-            b.info = "B";
-            b.next = c;
-            c.info = "C";
-            c.next = null;
+
             while (current != null) {
                 
             }
