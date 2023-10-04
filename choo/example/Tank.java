@@ -1,7 +1,7 @@
 package org.example;
 
-public class Tank extends Terran{
+public class Tank extends Terran {
     Tank() {
-        super("Tank",7, 15, false,index++);
+        super("Tank", 7, 15, false, index++);
     }
 }

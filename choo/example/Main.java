@@ -221,12 +221,12 @@ public class Main extends Unit {
             System.out.println(computer);
 
             for (int i = 0; i < computer.size(); i++) {
-                comarray.add(computer.get(i).number);
+                comarray.add(computer.get(i).getNumber());
             }
 
 
             for (int i = 0; i < user.size(); i++) {
-                comarray2.add(user.get(i).number);
+                comarray2.add(user.get(i).getNumber());
             }
 
             comattack(comarray, comarray2);
@@ -243,7 +243,7 @@ public class Main extends Unit {
         System.out.println(first + " " + second);
         computer.get(attacker(computer, first)).attackUnit(vitim(user, second));
 
-        if (vitim(user, second).hp <= 0) {
+        if (vitim(user, second).getHp() <= 0) {
             removeunit(user, second);
         }
     }
@@ -251,7 +251,7 @@ public class Main extends Unit {
     private static int attacker(List<Unit> computer, int first) {
 
         for (int i = 0; i < computer.size(); i++) {
-            if (computer.get(i).number == first) {
+            if (computer.get(i).getNumber() == first) {
                 return i;
             }
         }
@@ -261,14 +261,14 @@ public class Main extends Unit {
     private static void attack(int first, int second) {
         user.get(first).attackUnit(vitim(computer, second));
 
-        if (vitim(computer, second).hp <= 0) {
+        if (vitim(computer, second).getHp() <= 0) {
             removeunit(computer, second);
         }
     }
 
     private static Unit vitim(List<Unit> computer, int second) {
         for (int i = 0; i < computer.size(); i++) {
-            if (computer.get(i).number == second) {
+            if (computer.get(i).getNumber() == second) {
                 return computer.get(i);
             }
         }
@@ -279,7 +279,7 @@ public class Main extends Unit {
 
     private static void removeunit(List<Unit> computer, int second) {
         for (int i = 0; i < computer.size(); i++) {
-            if (computer.get(i).number == second) {
+            if (computer.get(i).getNumber() == second) {
                 computer.remove(i);
             }
         }

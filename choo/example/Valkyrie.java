@@ -1,7 +1,7 @@
 package org.example;
 
-public class Valkyrie extends Terran{
+public class Valkyrie extends Terran {
     Valkyrie() {
-        super("Valkyrie",4, 12, true,index++);
+        super("Valkyrie", 4, 12, true, index++);
     }
 }

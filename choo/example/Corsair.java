@@ -1,8 +1,8 @@
 package org.example;
 
-public class Corsair extends Protos{
+public class Corsair extends Protos {
 
     Corsair() {
-        super("Corsair",4,12,true,index++);
+        super("Corsair", 4, 12, true, index++);
     }
 }

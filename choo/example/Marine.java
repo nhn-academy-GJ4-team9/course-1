@@ -1,8 +1,8 @@
 package org.example;
 
-public class Marine extends Terran{
+public class Marine extends Terran {
     Marine() {
-        super("Marine",3, 10, false,index++);
+        super("Marine", 3, 10, false, index++);
     }
 
 

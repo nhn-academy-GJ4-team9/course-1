@@ -1,8 +1,8 @@
 package org.example;
 
-public class Ultralisk extends Zerg{
+public class Ultralisk extends Zerg {
 
     Ultralisk() {
-        super("Ultralisk",5,15,false,index++);
+        super("Ultralisk", 5, 15, false, index++);
     }
 }
