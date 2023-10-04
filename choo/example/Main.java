@@ -6,12 +6,10 @@ import java.util.Scanner;
 
 public class Main extends Unit {
 
-    static List<Unit> user;
-    static List<Unit> computer;
-
-    static String userrace = "";
-
-    static String comrace2 = "";
+    private static List<Unit> user;
+    private static List<Unit> computer;
+    private static String userrace = "";
+    private static String comrace = "";
 
     Main(String name, int attackpoint, int hp, boolean canfly, int index) {
         super(name, attackpoint, hp, canfly, index);
@@ -24,12 +22,11 @@ public class Main extends Unit {
 
         System.out.println("1.Terran 2.Protos 3.Zerg");
 
-        int race = scanner.nextInt();
+        int urace = scanner.nextInt();
 
         int randomint = 0;
 
-
-        switch (race) {
+        switch (urace) {
             case 1:
                 userrace = "Terran";
                 System.out.println("사용자의 종족은 테란입니다");
@@ -112,10 +109,10 @@ public class Main extends Unit {
         index = 0;
 
 
-        int comrace = (int) (Math.random() * 3) + 1;
-        switch (comrace) {
+        int crace = (int) (Math.random() * 3) + 1;
+        switch (crace) {
             case 1:
-                comrace2 = "Terran";
+                comrace = "Terran";
                 System.out.println("컴퓨터의 종족은 테란입니다");
                 computer = new ArrayList<>(5);
                 for (int i = 0; i < 5; i++) {
@@ -140,7 +137,7 @@ public class Main extends Unit {
                 }
                 break;
             case 2:
-                comrace2 = "Protos";
+                comrace = "Protos";
                 System.out.println("컴퓨터의 종족은 프로토스입니다");
                 computer = new ArrayList<>(4);
                 for (int i = 0; i < 4; i++) {
@@ -165,7 +162,7 @@ public class Main extends Unit {
                 }
                 break;
             case 3:
-                comrace2 = "Zerg";
+                comrace = "Zerg";
                 System.out.println("컴퓨터의 종족은 저그입니다");
                 computer = new ArrayList<>(8);
                 for (int i = 0; i < 8; i++) {
@@ -194,30 +191,25 @@ public class Main extends Unit {
 
         System.out.println(computer);
 
-        int first = 0;
-        int second = 0;
-
-        int first2 = 0;
-        int second2 = 0;
+        int attackUnitNumber = 0;
+        int defensiveUnitNumber = 0;
 
 
         while (isEnd(user, computer)) {
-
-
             System.out.println("공격을 수행할 아군 유닛과 공격할 적군 유닛을 선택하세요: ");
-            first = scanner.nextInt();
-            second = scanner.nextInt();
-            attack(first, second);
+            attackUnitNumber = scanner.nextInt();
+            defensiveUnitNumber = scanner.nextInt();
+            attack(attackUnitNumber, defensiveUnitNumber);
 
             if (!isEnd(user, computer)) {
                 break;
             }
 
-            List<Integer> comarray = new ArrayList<>(); //first
-            List<Integer> comarray2 = new ArrayList<>(); //second
+            List<Integer> comarray = new ArrayList<>(); //attackUnitNumber
+            List<Integer> comarray2 = new ArrayList<>(); //defensiveUnitNumber
             System.out.println("아군: " + userrace);
             System.out.println(user);
-            System.out.println("적군 " + comrace2);
+            System.out.println("적군 " + comrace);
             System.out.println(computer);
 
             for (int i = 0; i < computer.size(); i++) {
@@ -237,38 +229,37 @@ public class Main extends Unit {
 
     private static void comattack(List<Integer> comarray, List<Integer> comarray2) {
         int random = (int) (Math.random() * comarray.size());
-        int first = comarray.get(random);
+        int attackUnitNumber = comarray.get(random);
         int random2 = (int) (Math.random() * comarray2.size());
-        int second = comarray2.get(random2);
-        System.out.println(first + " " + second);
-        computer.get(attacker(computer, first)).attackUnit(vitim(user, second));
+        int defensiveUnitNumber = comarray2.get(random2);
+        computer.get(attacker(computer, attackUnitNumber)).attackUnit(victim(user, defensiveUnitNumber));
 
-        if (vitim(user, second).getHp() <= 0) {
-            removeunit(user, second);
+        if (victim(user, defensiveUnitNumber).getHp() <= 0) {
+            removeunit(user, defensiveUnitNumber);
         }
     }
 
-    private static int attacker(List<Unit> computer, int first) {
+    private static int attacker(List<Unit> computer, int attackUnitNumber) {
 
         for (int i = 0; i < computer.size(); i++) {
-            if (computer.get(i).getNumber() == first) {
+            if (computer.get(i).getNumber() == attackUnitNumber) {
                 return i;
             }
         }
         return 99;
     }
 
-    private static void attack(int first, int second) {
-        user.get(first).attackUnit(vitim(computer, second));
+    private static void attack(int attackUnitNumber, int defensiveUnitNumber) {
+        user.get(attackUnitNumber).attackUnit(victim(computer, defensiveUnitNumber));
 
-        if (vitim(computer, second).getHp() <= 0) {
-            removeunit(computer, second);
+        if (victim(computer, defensiveUnitNumber).getHp() <= 0) {
+            removeunit(computer, defensiveUnitNumber);
         }
     }
 
-    private static Unit vitim(List<Unit> computer, int second) {
+    private static Unit victim(List<Unit> computer, int defensiveUnitNumber) {
         for (int i = 0; i < computer.size(); i++) {
-            if (computer.get(i).getNumber() == second) {
+            if (computer.get(i).getNumber() == defensiveUnitNumber) {
                 return computer.get(i);
             }
         }
@@ -277,9 +268,9 @@ public class Main extends Unit {
         return null;
     }
 
-    private static void removeunit(List<Unit> computer, int second) {
+    private static void removeunit(List<Unit> computer, int defensiveUnitNumber) {
         for (int i = 0; i < computer.size(); i++) {
-            if (computer.get(i).getNumber() == second) {
+            if (computer.get(i).getNumber() == defensiveUnitNumber) {
                 computer.remove(i);
             }
         }

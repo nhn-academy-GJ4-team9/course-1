@@ -9,10 +9,6 @@ public class Unit {
 
     private int number = 0;
 
-    public String getName() {
-        return name;
-    }
-
     public int getAttackpoint() {
         return attackpoint;
     }
@@ -21,24 +17,9 @@ public class Unit {
         return hp;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setAttackpoint(int attackpoint) {
-        this.attackpoint = attackpoint;
-    }
 
     public void setHp(int hp) {
         this.hp = hp;
-    }
-
-    public void setCanfly(boolean canfly) {
-        this.canfly = canfly;
-    }
-
-    public void setNumber(int number) {
-        this.number = number;
     }
 
     public boolean isCanfly() {
